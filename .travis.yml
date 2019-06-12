@@ -5,7 +5,7 @@ services:
 before_install:
   - docker build -t anandp_pandav/docker-react -f Dockerfile.dev .
 script:
-  - docker run anandp_pandav/docker-react npm run test -- --coverage
+  - docker run anandp_pandav/docker-react npm run build -- --coverage
 
 deploy:
   provider: elasticbeanstalk
